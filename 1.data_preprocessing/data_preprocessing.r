@@ -24,3 +24,13 @@ dataset$Purchased = factor(dataset$Purchased,
                          levels = c('Yes', 'No'),
                          labels = c(1, 0)
                          )
+
+#Splitting the dataset into the taining set and test set
+#install.packages('caTools')
+set.seed(123)
+split = sample.split(dataset$Purchased,
+                     SplitRatio = 8.0)
+training_set = subset(dataset, split == TRUE)
+test_set = subset(dataset, split == FALSE)
+
+
