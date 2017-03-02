@@ -1,5 +1,5 @@
-# Machine-Learning-Tutorial-R-and-Python
-practice basic of machine learning by using R and Python.
+# Machine Learning Tutorial R and Python
+practice basic of machine learning by using R and Python. (This not a full Tutorial it just self practice, some part will explan later when practice is finish)
 
 <h2>What tools do I use in this Tutorial?</h2>
 <h4>R</h4>
