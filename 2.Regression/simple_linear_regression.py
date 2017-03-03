@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 1].values
+X = dataset.iloc[:, :-1].values #salary
+y = dataset.iloc[:, 1].values #year exp
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
@@ -23,10 +23,12 @@ sc_y = StandardScaler()
 y_train = sc_y.fit_transform(y_train)"""
 
 # Fitting Simple Linear Regression to the Training set
-
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
-
+y_pred = regressor.predict(X_test)
 
 # Visualising the Training set results
 
